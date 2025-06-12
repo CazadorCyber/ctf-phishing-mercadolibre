@@ -1,0 +1,5 @@
+2025-03-22 18:33:10 IP: 45.67.89.123 - GET /login.php
+2025-03-22 18:35:21 IP: 45.67.89.123 - POST /auth
+2025-03-22 18:36:00 IP: 91.234.22.3 - GET /admin.php
+2025-03-22 18:37:55 IP: 91.234.22.3 - GET /historial-compras
+2025-03-22 18:39:42 IP: 185.62.188.88 - DELETE /historial-compras

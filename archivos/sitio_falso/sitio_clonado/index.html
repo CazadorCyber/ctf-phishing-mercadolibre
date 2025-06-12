@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mercado Libre - Iniciar sesión</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+    header {
+      background-color: #ffe600;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      height: 40px;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      padding: 40px;
+    }
+    .login-container {
+      display: flex;
+      max-width: 900px;
+      width: 100%;
+    }
+    .left {
+      flex: 1;
+      padding-right: 40px;
+      font-size: 1.6em;
+      display: flex;
+      align-items: center;
+    }
+    .right {
+      flex: 1;
+      border: 1px solid #ccc;
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .right input[type="email"],
+    .right input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px 0;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .right button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3483fa;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .right button:hover {
+      background-color: #2968c8;
+    }
+    .right .crear-cuenta {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      color: #3483fa;
+      text-decoration: none;
+    }
+    .separator {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .separator::before, .separator::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ccc;
+    }
+    .separator:not(:empty)::before {
+      margin-right: .25em;
+    }
+    .separator:not(:empty)::after {
+      margin-left: .25em;
+    }
+    .google-login {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .google-login img {
+      width: 20px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Mercado Libre logo">
+  </header>
+  <main>
+    <div class="login-container">
+      <div class="left">
+        Ingresá tu e-mail y contraseña<br>para iniciar sesión
+      </div>
+      <div class="right">
+        <form id="loginForm">
+          <label for="email">E-mail o teléfono</label>
+          <input type="email" id="email" required>
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" required>
+          <button type="submit">Ingresar</button>
+        </form>
+        <a href="#" class="crear-cuenta">Crear cuenta</a>
+        <div class="separator">o</div>
+        <div class="google-login">
+          <img src="https://www.google.com/favicon.ico" alt="Google icon"> Iniciar sesión con Google
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

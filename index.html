@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CTF: Phishing en MercadoLibre</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffe600;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #3483fa;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>CTF: Phishing en MercadoLibre</header>
+  <main>
+    <section>
+      <h2>🧠 Resumen del Caso</h2>
+      <p>Un usuario recibió un mensaje por WhatsApp con un link a una supuesta publicación exclusiva. Al ingresar al sitio (una copia falsa de MercadoLibre), introdujo sus credenciales. Poco después, comenzaron a realizarse compras con su cuenta. El historial de compras desapareció y MercadoLibre no respondió al reclamo.</p>
+    </section>
+
+    <section>
+      <h2>🎯 Objetivos</h2>
+      <ul>
+        <li>Identificar el dominio falso.</li>
+        <li>Comparar el sitio clonado con el original.</li>
+        <li>Analizar un correo sospechoso y detectar fallas en su encabezado.</li>
+        <li>Recuperar rastros de la web en cachés externas.</li>
+        <li>Seguir las pistas del atacante.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📦 Fase 1 – Entrada al caso</h2>
+      <ul>
+        <li><a href="archivos/chat/vendedor_fake.png">Captura del mensaje de WhatsApp</a></li>
+        <li><a href="https://mercado1ibre.online/item_iphone14-pro.html">Link sospechoso</a> <span class="note">(puede estar caído)</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📦 Fase 2 – Sitio Clonado</h2>
+      <ul>
+        <li><a href="archivos/sitio_falso/sitio_clonado.zip">Descargar sitio clonado (ZIP)</a></li>
+        <li><a href="archivos/sitio_falso/hash_sitio.txt">Ver hash MD5</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📦 Fase 3 – Rastro en Internet</h2>
+      <ul>
+        <li><a href="archivos/cache/google_wayback_fake.png">Captura de caché Google/Wayback</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📦 Fase 4 – Intrusión</h2>
+      <ul>
+        <li><a href="archivos/emails/fake_mercado_alerta.eml">Correo trucho (.eml)</a></li>
+        <li><a href="archivos/logs/QR_access_log.png">QR al log de actividad</a> <span class="note">(por generar)</span></li>
+        <li><a href="archivos/logs/access_ilog_032025.log">Log de accesos fraudulentos</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
